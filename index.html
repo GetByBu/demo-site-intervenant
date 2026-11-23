@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sébastien D., intervenant</title>
+<meta name="description" content="Conférences et ateliers de prévention des risques liés aux jeux d'argent, pour les professionnels du jeu et du soin. Basé en Nouvelle-Aquitaine, interventions partout en France.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE occasion sobre : un service à vendre à des pros, ton direct, peu de couleurs
+   IDEA une main de cartes qu'on repose : le jeu vu par quelqu'un qui en est sorti
+   PICTURE cinq cartes en éventail, la dernière retournée, porte la photo de Seb
+   COLOUR blanc, encre #141414, rouge carte #d7332a, bande sombre #17110f pour les chiffres
+   TYPE Archivo 800 titres + Inter texte
+   LAYOUT laptop : titre sur 7 colonnes, cartes sur 5 ; téléphone : titre, cartes, boutons */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#141010);--ink:light-dark(#141414,#f3efec);--mut:light-dark(#5b5552,#b9b0ab);--red:light-dark(#d7332a,#ff5a4c);--line:light-dark(#e6e1de,#2e2826);--soft:light-dark(#f6f2f0,#1d1716);--dark:#17110f;--card:light-dark(#ffffff,#221b19)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:72px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3{font-family:Archivo,Inter,sans-serif;letter-spacing:-.02em;line-height:1.08;margin:0;text-wrap:balance}
+h1{font-size:clamp(34px,5.2vw,58px);font-weight:800}
+h2{font-size:clamp(28px,3.6vw,42px);font-weight:800}
+h3{font-size:20px;font-weight:600}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding-block:clamp(40px,6vw,88px);padding-inline:max(5vw,16px)}
+.draft{background:#fff3c4;color:#3b2f00;font-size:14px;padding:10px max(5vw,16px);text-align:left}
+.draft b{font-weight:600}
+.v{background:#fff3c4;color:#3b2f00;border-radius:4px;padding:1px 6px;font-size:13px;font-weight:500;white-space:nowrap;vertical-align:2px}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;padding:12px max(5vw,16px)}
+.brand{font-family:Archivo,sans-serif;font-weight:800;font-size:18px;text-decoration:none;margin-right:auto}
+.brand span{color:var(--red)}
+nav .links{display:flex;flex-wrap:wrap;gap:4px 20px;font-size:15px}
+nav .links a{text-decoration:none;color:var(--mut)}
+nav .links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;border:2px solid var(--red);cursor:pointer;font-family:inherit}
+.btn.main{background:var(--red);color:#fff}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.hero{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,56px);align-items:center}
+.hero .lead{font-size:clamp(17px,1.6vw,20px);color:var(--mut);margin-top:22px;max-width:36em}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;font-size:15px;color:var(--mut)}
+.hero .facts b{color:var(--ink);font-weight:600}
+.fig{position:relative;aspect-ratio:1/1;max-height:520px;width:100%}
+.fig svg{position:absolute;inset:0;width:100%;height:100%}
+.nums{background:var(--dark);color:#f3efec}
+.nums h2{max-width:20em}
+.nums .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:28px;margin-top:40px}
+.num b{display:block;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(40px,5vw,60px);line-height:1;color:#ff5a4c;white-space:nowrap}
+.num p{margin-top:12px;color:#d9d1cc;font-size:16px}
+.num a{display:inline-block;margin-top:10px;font-size:13px;color:#b9b0ab}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 48px;align-items:end;margin-bottom:40px}
+.sec-head p{color:var(--mut);font-size:17px}
+.formats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.fmt{background:var(--soft);border-radius:16px;padding:26px;display:grid;grid-template-rows:auto auto 1fr auto;gap:12px}
+.fmt .meta{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:13px;font-weight:500;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:3px 10px;white-space:nowrap}
+.fmt ul{margin:0;padding-left:18px;color:var(--mut)}
+.fmt li{margin:3px 0}
+.fmt .for{font-size:14px;color:var(--mut);border-top:1px solid var(--line);padding-top:12px}
+.pic{margin:0;display:grid;gap:8px}
+.pic svg{width:100%;aspect-ratio:10/7;border-radius:16px;display:block}
+.portrait svg{aspect-ratio:4/5}
+.pic figcaption{font-size:14px;color:var(--mut)}
+.gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.story{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,5vw,72px);align-items:start}
+.photo{aspect-ratio:4/5;border-radius:16px;background:repeating-linear-gradient(135deg,var(--soft) 0 14px,var(--bg) 14px 28px);border:2px dashed var(--line);display:grid;place-items:center;text-align:center;padding:24px;color:var(--mut);font-size:15px}
+.photo b{display:block;font-family:Archivo,sans-serif;font-size:56px;color:var(--red);line-height:1;margin-bottom:12px}
+.story .txt{display:grid;gap:18px;font-size:17px}
+.story blockquote{margin:6px 0;padding:0 0 0 20px;border-left:4px solid var(--red);font-family:Archivo,sans-serif;font-weight:600;font-size:clamp(21px,2.2vw,26px);line-height:1.3}
+.proof{display:grid;gap:10px;margin-top:6px}
+.proof div{display:flex;gap:12px;align-items:baseline}
+.proof div::before{content:"";flex:none;width:10px;height:10px;border-radius:2px;background:var(--red);transform:rotate(45deg) translateY(-2px)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;counter-reset:s}
+.step{border-top:3px solid var(--ink);padding-top:16px}
+.step h3{display:flex;gap:10px;align-items:baseline}
+.step h3::before{counter-increment:s;content:counter(s);color:var(--red);font-size:26px;font-weight:800}
+.step p{color:var(--mut);margin-top:8px}
+.contact{background:var(--soft)}
+.ct{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,5vw,64px);align-items:start}
+.ct .side{display:grid;gap:16px;font-size:17px}
+.mail{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-weight:600;overflow-wrap:anywhere}
+.copy{min-height:44px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:500 14px Inter,sans-serif;cursor:pointer}
+form{background:var(--card);border-radius:16px;padding:clamp(20px,3vw,32px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;border:1px solid var(--line)}
+label{display:grid;gap:6px;font-size:14px;font-weight:500}
+.full{grid-column:1/-1}
+input,select,textarea{font:16px Inter,sans-serif;color:var(--ink);background:var(--bg);border:1px solid color-mix(in srgb,var(--ink) 30%,transparent);border-radius:10px;padding:11px 12px;min-height:46px;width:100%}
+textarea{min-height:120px;resize:vertical}
+#out{display:none;grid-column:1/-1;background:var(--soft);border-radius:12px;padding:16px;font-size:15px}
+#out pre{white-space:pre-wrap;font:14px/1.5 Inter,sans-serif;margin:10px 0}
+footer{background:var(--dark);color:#d9d1cc;font-size:14px}
+footer .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:24px}
+footer b{color:#fff;font-family:Archivo,sans-serif;font-size:17px;display:block;margin-bottom:6px}
+footer a{color:#f3efec}
+.help{background:#2a1f1c;border-radius:12px;padding:16px}
+@media(max-width:860px){.hero,.story,.ct,.sec-head{grid-template-columns:minmax(0,1fr)}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.fig{max-width:440px;margin:0 auto}.photo{max-width:360px}}
+@media(max-width:860px){.hero>div:first-child{display:contents}.hero h1{order:1}.hero .fig{order:2;max-width:330px;margin:-8px auto -20px}.hero .lead{order:3;margin-top:0}.hero .cta{order:4;margin-top:0}.hero .facts{order:5;margin-top:0}.hero{gap:20px}.gal{grid-template-columns:repeat(2,minmax(0,1fr))}.portrait{max-width:360px}}
+@media(max-width:600px){nav .btn{min-height:38px!important;padding:0 14px!important;font-size:14px!important}nav .wrap{flex-wrap:nowrap}.brand{font-size:16px}.gal,.formats,.steps,form{grid-template-columns:minmax(0,1fr)}nav .links{display:none}}
+.marquee{background:var(--red);color:#fff;overflow:hidden;padding:14px 0;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(18px,2.2vw,26px)}
+.track{display:flex;width:max-content}
+.track span{padding:0 28px;white-space:nowrap;display:inline-flex;align-items:center;gap:28px}
+.track span::after{content:"";width:12px;height:12px;background:#fff;transform:rotate(45deg);margin-left:28px}
+.num .bar{display:block;height:4px;background:#3a2c29;border-radius:2px;margin-top:14px;position:relative;overflow:hidden}
+.num .bar::after{content:"";position:absolute;inset:0;width:var(--w);background:#ff5a4c;border-radius:2px}
+.step{position:relative;border-top-color:var(--line)}
+.step::after{content:"";position:absolute;left:0;top:-3px;height:3px;width:100%;background:var(--ink);transform-origin:left}
+.fmt{transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+.fmt:hover{transform:translateY(-6px);box-shadow:0 18px 40px -24px rgba(0,0,0,.45)}
+.fmt h3{background:linear-gradient(var(--red),var(--red)) 0 100%/0 3px no-repeat;transition:background-size .4s;justify-self:start;padding-bottom:4px}
+.fmt:hover h3{background-size:100% 3px}
+.btn{position:relative;overflow:hidden;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.main::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-120%)}
+.btn.main:hover::after{transform:translateX(120%);transition:transform .7s}
+.pic svg{transition:transform .5s}
+.pic:hover svg{transform:scale(1.02)}
+.ff,.fb{transform-box:fill-box;transform-origin:center}
+.fb{transform:scaleX(1)}.ff{transform:scaleX(0)}
+.w{display:inline-block}
+nav .sm{display:none}
+@media(max-width:860px){nav .lg{display:none}nav .sm{display:inline}nav .wrap{flex-wrap:nowrap}}
+@media(prefers-reduced-motion:no-preference){
+.track{animation:mq 28s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+.deal{animation:deal .8s cubic-bezier(.2,.9,.25,1.15) both;animation-delay:calc(.15s + var(--i)*.14s)}
+@keyframes deal{from{transform:translate(0,160px) scale(.6);opacity:0}to{transform:none;opacity:1}}
+.ff{animation:ffo .35s ease-in 1.5s both}
+.fb{animation:fbi .35s ease-out 1.85s both}
+@keyframes ffo{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+@keyframes fbi{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.c5{transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.fig:hover .c5{transform:rotate(38deg) translate(6px,-8px)}
+.chip{animation:fl 6s ease-in-out infinite;animation-delay:var(--d)}
+@keyframes fl{50%{transform:translateY(-14px)}}
+.glow{transform-box:fill-box;transform-origin:center;animation:gl 5s ease-in-out infinite}
+@keyframes gl{50%{transform:scale(1.12);opacity:.16}}
+h1 .w{animation:up .7s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--k)*55ms)}
+.hero .lead,.hero .cta,.hero .facts{animation:up .7s cubic-bezier(.2,.8,.2,1) both}
+.hero .lead{animation-delay:.45s}.hero .cta{animation-delay:.6s}.hero .facts{animation-delay:.75s}
+@keyframes up{from{transform:translateY(22px);opacity:0}to{transform:none;opacity:1}}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1);transition-delay:var(--dl,0s)}
+.js .rv.in{opacity:1;transform:none}
+.js .num .bar::after{transform:scaleX(0);transform-origin:left;transition:transform 1.4s cubic-bezier(.2,.8,.2,1) .2s}
+.js .num.in .bar::after{transform:scaleX(1)}
+.js .step::after{transform:scaleX(0);transition:transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:var(--dl,0s)}
+.js .step.in::after{transform:scaleX(1)}
+.spot{transform-box:fill-box;transform-origin:center;animation:sp 4s ease-in-out infinite alternate}
+@keyframes sp{from{transform:translateX(-110px)}to{transform:translateX(30px)}}
+.sbar{transform-box:fill-box;transform-origin:left;animation:sb 3s ease-in-out infinite}
+@keyframes sb{0%{transform:scaleX(.2)}60%,100%{transform:scaleX(1)}}
+.paper{animation:pp 3s ease-in-out infinite}
+@keyframes pp{50%{transform:translateY(-3px)}}
+.bub{transform-box:fill-box;transform-origin:bottom left;animation:bb 4s ease-in-out infinite;animation-delay:var(--b)}
+@keyframes bb{0%,10%{transform:scale(0);opacity:0}20%,70%{transform:scale(1);opacity:1}85%,100%{transform:scale(0);opacity:0}}
+}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>Maquette de démonstration.</b> Les visuels sont des illustrations provisoires, le téléphone et l'adresse mail sont fictifs : tout sera remplacé par ses vraies photos et coordonnées.</div>
+
+<nav aria-label="Navigation principale">
+  <div class="wrap">
+    <a class="brand" href="#top">Sébastien D.<span>.</span></a>
+    <div class="links">
+      <a href="#formats">Interventions</a>
+      <a href="#chiffres">Pourquoi</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#deroule">Déroulé</a>
+    </div>
+    <a class="btn main" href="#contact" style="min-height:42px;padding:0 18px;font-size:15px"><span class="lg">Demander une intervention</span><span class="sm">Contact</span></a>
+  </div>
+</nav>
+
+<header class="band" id="top">
+  <div class="wrap hero">
+    <div>
+      <h1>Prévenir le jeu excessif, avec un discours qui touche juste.</h1>
+      <p class="lead">Conférences et ateliers de prévention des risques liés aux jeux d'argent, pour les entreprises du jeu, les soignants, les établissements et les collectivités. Concret, sans jugement, appuyé sur les chiffres officiels.</p>
+      <div class="cta">
+        <a class="btn main" href="#contact">Demander une intervention</a>
+        <a class="btn alt" href="#formats">Voir les formats</a>
+      </div>
+      <div class="facts">
+        <span><b>Basé en Nouvelle-Aquitaine</b>, interventions partout en France</span>
+        <span><b>Formats</b> de 1 h à une demi-journée</span>
+      </div>
+    </div>
+    <div class="fig" aria-label="Cinq cartes à jouer en éventail, la dernière retournée porte les initiales SD">
+      <svg viewBox="0 0 500 500" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f1ebe7"/></linearGradient>
+          <linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2463c"/><stop offset="1" stop-color="#b3241d"/></linearGradient>
+          <pattern id="lat" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="14" height="14" fill="none"/><path d="M0 0V14" stroke="#ffffff" stroke-opacity=".22" stroke-width="4"/></pattern>
+          <path id="heart" d="M0 6C-6-4-18 0-14 10-11 17 0 24 0 24 0 24 11 17 14 10 18 0 6-4 0 6Z"/>
+          <path id="spade" d="M0-22C-6-8-20 0-16 10-13 17-4 16 0 10-1 18-4 22-8 24H8C4 22 1 18 0 10 4 16 13 17 16 10 20 0 6-8 0-22Z"/>
+        </defs>
+        <circle class="glow" cx="250" cy="230" r="170" fill="#d7332a" opacity=".10"/>
+        <g class="chip" style="--d:0s"><g transform="translate(70 120)"><circle r="30" fill="#141414"/><circle r="22" fill="none" stroke="#fff" stroke-width="5" stroke-dasharray="7 7"/><circle r="12" fill="#d7332a"/></g></g>
+        <g class="chip" style="--d:-2s"><g transform="translate(440 90)"><circle r="22" fill="#d7332a"/><circle r="16" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="5 5"/></g></g>
+        <g class="chip" style="--d:-4s"><g transform="translate(455 330)"><circle r="18" fill="#141414"/><circle r="12" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="4 4"/></g></g>
+        <ellipse cx="250" cy="452" rx="190" ry="18" fill="#000" opacity=".12"/>
+        <g transform="translate(250 430)">
+          <g class="deal" style="--i:0"><g transform="rotate(-34)"><g transform="translate(-80 -330)"><rect width="160" height="230" rx="14" fill="url(#face)" stroke="#d8d0cb" stroke-width="2"/><text x="16" y="38" font-family="Archivo, Inter, Arial, sans-serif" font-weight="800" font-size="30" fill="#141414">7</text><use href="#spade" transform="translate(80 120) scale(1.7)" fill="#141414"/></g></g></g>
+          <g class="deal" style="--i:1"><g transform="rotate(-17)"><g transform="translate(-80 -340)"><rect width="160" height="230" rx="14" fill="url(#face)" stroke="#d8d0cb" stroke-width="2"/><text x="16" y="38" font-family="Archivo, Inter, Arial, sans-serif" font-weight="800" font-size="30" fill="#d7332a">9</text><use href="#heart" transform="translate(80 105) scale(2)" fill="#d7332a"/></g></g></g>
+          <g class="deal" style="--i:2"><g><g transform="translate(-80 -345)"><rect width="160" height="230" rx="14" fill="url(#face)" stroke="#d8d0cb" stroke-width="2"/><text x="16" y="38" font-family="Archivo, Inter, Arial, sans-serif" font-weight="800" font-size="30" fill="#141414">R</text><use href="#spade" transform="translate(80 120) scale(1.7)" fill="#141414"/></g></g></g>
+          <g class="deal" style="--i:3"><g transform="rotate(17)"><g transform="translate(-80 -340)"><rect width="160" height="230" rx="14" fill="url(#face)" stroke="#d8d0cb" stroke-width="2"/><text x="16" y="38" font-family="Archivo, Inter, Arial, sans-serif" font-weight="800" font-size="30" fill="#d7332a">A</text><use href="#heart" transform="translate(80 105) scale(2)" fill="#d7332a"/></g></g></g>
+          <g class="deal" style="--i:4"><g class="c5" transform="rotate(34)"><g transform="translate(-80 -330)">
+            <g class="fb"><rect width="160" height="230" rx="14" fill="url(#back)"/><rect width="160" height="230" rx="14" fill="url(#lat)"/><rect x="12" y="12" width="136" height="206" rx="9" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2"/><circle cx="80" cy="115" r="40" fill="#fff"/><text x="80" y="128" text-anchor="middle" font-family="Archivo, Inter, Arial, sans-serif" font-weight="800" font-size="34" fill="#b3241d">SD</text></g>
+            <g class="ff"><rect width="160" height="230" rx="14" fill="#141414"/><rect x="12" y="12" width="136" height="206" rx="9" fill="none" stroke="#d7332a" stroke-width="2"/><text x="80" y="140" text-anchor="middle" font-family="Archivo, Inter, Arial, sans-serif" font-weight="800" font-size="70" fill="#d7332a">?</text></g>
+          </g></g></g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-label="Publics : opérateurs de jeux, casinos, réseaux de points de vente, addictologues, CSAPA, établissements scolaires, collectivités, entreprises">
+  <div class="track" aria-hidden="true">
+    <span>Opérateurs de jeux</span><span>Casinos</span><span>Points de vente</span><span>Addictologues</span><span>CSAPA</span><span>Lycées</span><span>Collectivités</span><span>Entreprises</span>
+    <span>Opérateurs de jeux</span><span>Casinos</span><span>Points de vente</span><span>Addictologues</span><span>CSAPA</span><span>Lycées</span><span>Collectivités</span><span>Entreprises</span>
+  </div>
+</div>
+
+<section class="band nums" id="chiffres" aria-labelledby="t-chiffres">
+  <div class="wrap">
+    <h2 id="t-chiffres">Le jeu excessif n'est pas un cas isolé. Les chiffres du régulateur le montrent.</h2>
+    <div class="grid">
+      <div class="num"><b data-to="600000">600 000</b><i class="bar" style="--w:87%"></i><p>joueurs en ligne repérés avec une forte probabilité de jeu excessif au second semestre 2025, soit 8,7 % des comptes.</p><a href="https://anj.fr/sites/default/files/2026-06/Rapport%20annuel%202025%20web.pdf">ANJ, rapport annuel 2025</a></div>
+      <div class="num"><b data-to="60" data-suf=" %">60 %</b><i class="bar" style="--w:60%"></i><p>du produit brut des jeux sur compte provient du jeu excessif, selon l'Autorité nationale des jeux.</p><a href="https://sigma.world/fr/news/regulateur-francais-controles-risques-jeux-de-hasard/">ANJ, cité par SiGMA, 2026</a></div>
+      <div class="num"><b data-to="12.1" data-dec="1" data-suf=" %">12,1 %</b><i class="bar" style="--w:12.1%"></i><p>des 15-17 ans ont une pratique de jeu problématique, alors que la vente leur est interdite.</p><a href="https://anj.fr/sites/default/files/2022-05/Plaquette%20ANJ%20mai22.pdf">ANJ, chiffres clés 2021</a></div>
+      <div class="num"><b data-to="1290">1 290</b><i class="bar" style="--w:100%"></i><p>adresses de sites de jeu illégaux bloquées par l'ANJ en 2025. L'offre illégale reste accessible, souvent sans VPN.</p><a href="https://anj.fr/promotion-illegal-gambling-services-blocking-polymarket-website">ANJ, juillet 2026</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="formats" aria-labelledby="t-formats">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="t-formats">Quatre formats, adaptés à votre public.</h2>
+      <p>Chaque intervention part d'un échange préalable : on ajuste le contenu, la durée et le ton à votre public.</p>
+    </div>
+    <div class="formats">
+      <article class="fmt">
+        <h3>Conférence-témoignage</h3>
+        <div class="meta"><span class="tag">1 h à 1 h 30</span><span class="tag">jusqu'à 300 personnes</span></div>
+        <ul><li>Comment on bascule du jeu loisir au jeu excessif</li><li>Les mécanismes qui accrochent : quasi-gain, mise rejouée, promotions</li><li>Ce qui aide un joueur à s'en sortir, et ce qui ne l'aide pas</li><li>Temps de questions-réponses</li></ul>
+        <p class="for">Pour : conventions, séminaires, journées santé, colloques</p>
+      </article>
+      <article class="fmt">
+        <h3>Atelier pour les équipes du jeu</h3>
+        <div class="meta"><span class="tag">demi-journée</span><span class="tag">8 à 20 personnes</span></div>
+        <ul><li>Repérer les signaux d'un joueur en difficulté</li><li>Ce qu'un joueur entend, ou n'entend pas, quand on lui parle</li><li>Mises en situation à partir de cas vécus</li></ul>
+        <p class="for">Pour : opérateurs, réseaux de points de vente, casinos, services client</p>
+      </article>
+      <article class="fmt">
+        <h3>Intervention pour les professionnels du soin</h3>
+        <div class="meta"><span class="tag">1 h à 2 h</span><span class="tag">en présentiel ou à distance</span></div>
+        <ul><li>Le regard du patient sur le parcours de soin</li><li>Ce qui fait venir un joueur, et ce qui le fait partir</li><li>Échange de pratiques avec l'équipe</li></ul>
+        <p class="for">Pour : addictologues, CSAPA, travailleurs sociaux, services de médecine du travail</p>
+      </article>
+      <article class="fmt">
+        <h3>Module « offre illégale »</h3>
+        <div class="meta"><span class="tag">30 à 45 min</span><span class="tag">en complément d'un format</span></div>
+        <ul><li>Démonstration : un site illégal, accessible depuis la France</li><li>Ce que perd le joueur : aucun recours, gains bloqués, aucune auto-exclusion</li><li>Les chiffres de l'ANJ sur le blocage des sites</li></ul>
+        <p class="for">Pour : opérateurs agréés, régulateurs, prévention jeunes</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="parcours" style="background:var(--soft)" aria-labelledby="t-parcours">
+  <div class="wrap story">
+    <figure class="pic portrait" style="margin:0">
+      <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration provisoire : portrait d'intervenant">
+        <defs><linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a2a26"/><stop offset="1" stop-color="#17110f"/></linearGradient><radialGradient id="plight" cx=".3" cy=".25" r=".7"><stop offset="0" stop-color="#ff5a4c" stop-opacity=".35"/><stop offset="1" stop-color="#ff5a4c" stop-opacity="0"/></radialGradient></defs>
+        <rect width="400" height="500" fill="url(#pbg)"/><rect width="400" height="500" fill="url(#plight)"/>
+        <path d="M60 500C70 390 130 345 200 345S330 390 340 500Z" fill="#2b2b33"/>
+        <path d="M168 345L200 410 232 345Z" fill="#e9e4e0"/><path d="M193 360L200 430 207 360Z" fill="#b3241d"/>
+        <rect x="178" y="290" width="44" height="62" rx="18" fill="#c99a83"/>
+        <ellipse cx="200" cy="225" rx="68" ry="82" fill="#d9a991"/>
+        <path d="M200 225m-68 0a68 82 0 0 0 68 82V143a68 82 0 0 0-68 82Z" fill="#c4917a" opacity=".55"/>
+        <path d="M132 210C128 150 165 132 200 132S274 148 268 210C258 178 240 166 200 168S144 178 132 210Z" fill="#3b2a22"/>
+      </svg>
+      <figcaption>Visuel d'illustration, à remplacer par un portrait de Seb.</figcaption>
+    </figure>
+    <div class="txt">
+      <h2 id="t-parcours">Un intervenant de terrain, pas un théoricien.</h2>
+      <p>Sébastien D. intervient auprès des professionnels du jeu et du soin pour parler du jeu excessif tel qu'il se vit, et de ce qui aide vraiment un joueur à reprendre la main.</p>
+      <blockquote>Un joueur en difficulté ne se reconnaît pas dans une brochure. Il se reconnaît dans une histoire.</blockquote>
+      <p>Son approche : partir du concret, sans jugement, et l'appuyer sur les données publiques du régulateur et des organismes de santé.</p>
+      <div class="proof">
+        <div>Interventions devant des médecins addictologues</div>
+        <div>Interventions pour de grands établissements du secteur du jeu</div>
+        <div>Basé en Nouvelle-Aquitaine, interventions partout en France</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="galerie" aria-labelledby="t-galerie">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="t-galerie">En intervention.</h2>
+      <p>Conférences, ateliers, échanges avec les équipes : chaque format laisse une large place aux questions.</p>
+    </div>
+    <div class="gal">
+      <figure class="pic">
+        <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration : conférence devant un auditoire">
+          <rect width="400" height="280" fill="#241a18"/><rect x="40" y="30" width="200" height="110" rx="4" fill="#3a2c29"/><rect x="52" y="42" width="176" height="86" rx="2" fill="#f3efec"/><rect class="sbar" x="66" y="58" width="90" height="10" rx="3" fill="#d7332a"/><rect x="66" y="76" width="140" height="6" rx="3" fill="#bdb3ad"/><rect x="66" y="88" width="120" height="6" rx="3" fill="#bdb3ad"/><rect x="66" y="104" width="50" height="16" rx="2" fill="#141414"/>
+          <ellipse class="spot" cx="300" cy="90" rx="70" ry="110" fill="#ff5a4c" opacity=".16"/>
+          <rect x="285" y="150" width="40" height="60" rx="4" fill="#5a4540"/><circle cx="305" cy="92" r="18" fill="#d9a991"/><path d="M281 150C283 118 293 112 305 112S327 118 329 150Z" fill="#2b2b33"/>
+          <g fill="#120d0c"><circle cx="40" cy="250" r="22"/><circle cx="100" cy="258" r="24"/><circle cx="165" cy="250" r="22"/><circle cx="230" cy="258" r="24"/><circle cx="295" cy="252" r="22"/><circle cx="360" cy="258" r="24"/><rect y="255" width="400" height="30"/></g>
+        </svg>
+        <figcaption>Conférence-témoignage</figcaption>
+      </figure>
+      <figure class="pic">
+        <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration : atelier autour d'une table">
+          <rect width="400" height="280" fill="#efe8e4"/><rect x="0" y="180" width="400" height="100" fill="#e0d6d0"/>
+          <ellipse cx="200" cy="190" rx="150" ry="34" fill="#b98f78"/><ellipse cx="200" cy="184" rx="150" ry="34" fill="#d6b29c"/>
+          <g class="paper"><rect x="150" y="172" width="34" height="22" rx="2" fill="#fff" transform="rotate(-8 167 183)"/></g><g class="paper" style="animation-delay:-1.5s"><rect x="214" y="170" width="34" height="22" rx="2" fill="#fff" transform="rotate(6 231 181)"/></g>
+          <g class="bub" style="--b:0s"><rect x="168" y="40" width="64" height="30" rx="15" fill="#d7332a"/><circle cx="186" cy="55" r="3.5" fill="#fff"/><circle cx="200" cy="55" r="3.5" fill="#fff"/><circle cx="214" cy="55" r="3.5" fill="#fff"/></g>
+          <g><circle cx="90" cy="118" r="17" fill="#c99a83"/><path d="M64 175C66 145 76 136 90 136S114 145 116 175Z" fill="#d7332a"/></g>
+          <g><circle cx="160" cy="102" r="17" fill="#8a5d48"/><path d="M134 160C136 130 146 121 160 121S184 130 186 160Z" fill="#2b2b33"/></g>
+          <g><circle cx="240" cy="102" r="17" fill="#d9a991"/><path d="M214 160C216 130 226 121 240 121S264 130 266 160Z" fill="#5a6b7a"/></g>
+          <g><circle cx="310" cy="118" r="17" fill="#b07c63"/><path d="M284 175C286 145 296 136 310 136S334 145 336 175Z" fill="#141414"/></g>
+        </svg>
+        <figcaption>Atelier pour les équipes</figcaption>
+      </figure>
+      <figure class="pic">
+        <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration : échange avec des professionnels du soin">
+          <rect width="400" height="280" fill="#d7332a"/><rect x="250" y="30" width="110" height="150" rx="4" fill="#b3241d"/><rect x="262" y="42" width="86" height="126" rx="2" fill="#e2463c"/>
+          <rect y="210" width="400" height="70" fill="#a51f19"/>
+          <g class="bub" style="--b:0s"><rect x="40" y="40" width="80" height="34" rx="17" fill="#fff"/><rect x="56" y="54" width="48" height="6" rx="3" fill="#d7332a"/></g>
+          <g class="bub" style="--b:2s"><rect x="150" y="54" width="70" height="30" rx="15" fill="#141414"/><rect x="164" y="66" width="42" height="6" rx="3" fill="#fff"/></g>
+          <g><circle cx="130" cy="110" r="22" fill="#d9a991"/><path d="M96 215C98 170 112 158 130 158S162 170 164 215Z" fill="#f3efec"/><rect x="122" y="170" width="16" height="4" rx="2" fill="#5a6b7a"/></g>
+          <g><circle cx="230" cy="118" r="22" fill="#8a5d48"/><path d="M196 215C198 175 212 164 230 164S262 175 264 215Z" fill="#2b2b33"/></g>
+        </svg>
+        <figcaption>Échange avec des soignants</figcaption>
+      </figure>
+    </div>
+    <p style="font-size:14px;color:var(--mut);margin-top:14px">Visuels d'illustration, à remplacer par des photos d'interventions.</p>
+  </div>
+</section>
+
+<section class="band" id="deroule" aria-labelledby="t-deroule">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="t-deroule">De la prise de contact à l'intervention.</h2>
+      <p>Une organisation simple, pour que vous n'ayez rien à préparer de votre côté, à part la salle.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Échange</h3><p>Un appel de 30 minutes pour comprendre votre public, vos objectifs et vos contraintes.</p></div>
+      <div class="step"><h3>Proposition</h3><p>Un format, une durée et un devis, envoyés par écrit sous quelques jours.</p></div>
+      <div class="step"><h3>Intervention</h3><p>Sur place ou à distance, avec ses propres supports.</p></div>
+      <div class="step"><h3>Ressources</h3><p>Les supports et les contacts d'aide utiles remis aux participants.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band contact" id="contact" aria-labelledby="t-contact">
+  <div class="wrap ct">
+    <div class="side">
+      <h2 id="t-contact">Parlons de votre prochaine intervention.</h2>
+      <p>Décrivez votre public et votre date. Seb vous répond personnellement.</p>
+      <div class="mail"><span id="addr">contact@exemple.fr</span><button class="copy" type="button" id="cp">Copier l'adresse</button></div>
+      <p>Téléphone : <span style="white-space:nowrap">06 00 00 00 00</span> <span style="font-size:13px;color:var(--mut)">(numéro fictif)</span></p>
+    </div>
+    <form id="f" novalidate>
+      <label>Nom<input id="nom" name="nom" autocomplete="name" required></label>
+      <label>Structure<input id="org" name="org" autocomplete="organization"></label>
+      <label>E-mail<input id="mel" name="mel" type="email" autocomplete="email" required></label>
+      <label>Type d'intervention
+        <select id="typ" name="typ"><option>Conférence-témoignage</option><option>Atelier pour les équipes du jeu</option><option>Intervention pour les professionnels du soin</option><option>Module « offre illégale »</option><option>Je ne sais pas encore</option></select>
+      </label>
+      <label>Date souhaitée<input id="dat" name="dat" placeholder="ex. mars 2027"></label>
+      <label>Nombre de participants<input id="nb" name="nb" inputmode="numeric"></label>
+      <label class="full">Votre demande<textarea id="msg" name="msg"></textarea></label>
+      <div class="full"><button class="btn main" type="submit">Préparer ma demande</button></div>
+      <div id="out" role="status"></div>
+    </form>
+  </div>
+</section>
+
+<footer class="band">
+  <div class="wrap">
+    <div><b>Sébastien D.</b>Intervenant en prévention des risques liés aux jeux d'argent<br>Nouvelle-Aquitaine</div>
+    <div><b>Navigation</b><a href="#formats">Interventions</a><br><a href="#chiffres">Pourquoi</a><br><a href="#parcours">Parcours</a><br><a href="#contact">Contact</a></div>
+    <div class="help"><b>Besoin d'aide pour vous ou un proche ?</b>Joueurs Info Service, gratuit et anonyme : 09 74 75 13 13<br><a href="https://www.joueurs-info-service.fr">joueurs-info-service.fr</a></div>
+  </div>
+</footer>
+
+<script>
+{
+  const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const h1 = document.querySelector('h1');
+  h1.innerHTML = h1.textContent.split(' ').map((w, k) => `<span class="w" style="--k:${k}">${w}</span>`).join(' ');
+  if (!calm && 'IntersectionObserver' in window) {
+    document.documentElement.classList.add('js');
+    const groups = ['.sec-head', '.fmt', '.step', '.pic', '.num', '.story .txt', '.ct > *', '#t-chiffres'];
+    groups.forEach(sel => document.querySelectorAll(sel).forEach((el, i) => { el.classList.add('rv'); el.style.setProperty('--dl', (i % 4) * 0.1 + 's'); }));
+    const fmt = (n, d) => n.toLocaleString('fr-FR', { minimumFractionDigits: d, maximumFractionDigits: d }).replace(/ /g, ' ');
+    const count = b => {
+      const to = parseFloat(b.dataset.to), dec = +(b.dataset.dec || 0), suf = b.dataset.suf || '', t0 = performance.now();
+      const tick = t => {
+        const p = Math.min(1, (t - t0) / 1600), e = 1 - (1 - p) ** 3, val = to * e;
+        b.textContent = fmt(p < 1 ? val : to, dec) + suf;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      const b = e.target.querySelector && e.target.querySelector('b[data-to]');
+      if (b) count(b);
+      io.unobserve(e.target);
+    }), { threshold: 0.15 });
+    document.querySelectorAll('.rv').forEach(el => io.observe(el));
+    setTimeout(() => document.querySelectorAll('.rv:not(.in)').forEach(el => { if (el.getBoundingClientRect().top < innerHeight) el.classList.add('in'); }), 1200);
+  }
+  const addr = document.getElementById('addr').textContent;
+  const cp = document.getElementById('cp');
+  cp.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(addr); cp.textContent = 'Adresse copiée'; }
+    catch (e) { cp.textContent = 'Sélectionnez l’adresse'; }
+    setTimeout(() => { cp.textContent = 'Copier l’adresse'; }, 2500);
+  });
+  const f = document.getElementById('f');
+  const out = document.getElementById('out');
+  const v = id => document.getElementById(id).value.trim();
+  f.addEventListener('submit', e => {
+    e.preventDefault();
+    if (!v('nom') || !v('mel')) { out.style.display = 'block'; out.textContent = 'Indiquez au moins votre nom et votre e-mail.'; return; }
+    const body = `Bonjour Seb,\n\nType d'intervention : ${v('typ')}\nStructure : ${v('org') || '-'}\nDate souhaitée : ${v('dat') || '-'}\nParticipants : ${v('nb') || '-'}\n\n${v('msg')}\n\n${v('nom')}\n${v('mel')}`;
+    const href = 'mailto:' + addr + '?subject=' + encodeURIComponent('Demande d’intervention - ' + (v('org') || v('nom'))) + '&body=' + encodeURIComponent(body);
+    out.style.display = 'block';
+    out.innerHTML = '<b>Votre demande est prête.</b> Ouvrez-la dans votre messagerie, ou copiez le texte et envoyez-le à ' + addr + '.<pre></pre><a class="btn main" style="min-height:44px">Ouvrir dans ma messagerie</a>';
+    out.querySelector('pre').textContent = body;
+    out.querySelector('a').href = href;
+  });
+}
+</script>
+</body>
+</html>
